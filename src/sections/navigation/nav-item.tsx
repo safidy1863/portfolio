@@ -5,7 +5,7 @@ type NavItemProps = {
 };
 
 export const NavItem = (props: NavItemProps) => {
-  const { link, label, isActive = false } = props;
+  const { label, isActive = false } = props;
 
   return <button className={`${isActive ? "text-yellow" : "text-white"}`}>{label}</button>;
 };
