@@ -9,6 +9,7 @@ export default {
       },
       colors: {
         "blue-dark": "#010A17",
+        blue: "#002663",
         yellow: "#FDCA40",
         gray: "#FCFCFC",
       },
