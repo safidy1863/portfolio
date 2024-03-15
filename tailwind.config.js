@@ -11,6 +11,7 @@ export default {
       colors: {
         "blue-dark": "#010A17",
         "blue-opacity": "#020F21",
+        "blue-opacity-2": "#789ACA",
         blue: "#002663",
         yellow: "#FDCA40",
         gray: "#FCFCFC",
@@ -29,7 +30,7 @@ export default {
     },
   },
   daiysyui: {
-    themes : ["light", "dark"]
+    themes: ["light", "dark"],
   },
   plugins: [require("daisyui")],
 };

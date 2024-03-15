@@ -6,3 +6,9 @@
   font-family: "urbanist";
   src: url("./assets/fonts/urbanist.ttf");
 }
+
+@layer components {
+  .padding {
+    @apply px-3 tablet:px-5 laptop:px-10;
+  }
+}

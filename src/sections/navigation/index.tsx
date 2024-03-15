@@ -8,7 +8,7 @@ export const Navigation = () => {
   const toggleTheme = () => (isLight.value = !isLight.value);
 
   return (
-    <header className="fixed left-0 p-3 dark:bg-blue-dark backdrop:blur-3xl tablet:px-5 large-width:px-10 right-0 flex justify-between items-center">
+    <header className="fixed z-20 left-0 p-3 backdrop-opacity-30 tablet:px-5 large-width:px-10 right-0 flex justify-between items-center">
       <Logo />
       <nav className=" hidden laptop:flex gap-x-5">
         <NavItem link={links.home} label="Home" isActive />
@@ -28,7 +28,7 @@ export const Navigation = () => {
           Hire me
         </button>
 
-        {/* <div className="dropdown z-10 dropdown-bottom dropdown-end laptop:hidden">
+        <div className="dropdown z-10 dropdown-bottom dropdown-end laptop:hidden">
           <div tabIndex={0} role="button">
             {" "}
             <Icon icon="ri:menu-3-line" className="text-3xl" />{" "}
@@ -43,7 +43,7 @@ export const Navigation = () => {
             <NavItem link={links.hackaton} label="Hackaton" />
             <NavItem link={links.community} label="Community" />
           </nav>
-        </div> */}
+        </div>
       </div>
     </header>
   );
