@@ -17,7 +17,7 @@ export default {
         gray: "#FCFCFC",
       },
       backgroundImage: {
-        gradient: "linear-gradient(#D9D9D9,#D9D9D9)",
+        gradient: "linear-gradient(rgba(217,217,217,1),rgba(217,217,217,0))",
       },
       screens: {
         smartphone: "481px",
