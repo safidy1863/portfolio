@@ -8,10 +8,14 @@ export const Navigation = () => {
   // const toggleTheme = () => (isLight.value = !isLight.value);
 
   return (
-    <header className="fixed z-50 left-0 p-3 backdrop-opacity-30 tablet:px-5 large-width:px-10 right-0 flex justify-between items-center" style={{backdropFilter : 'blur(50px)'}}>
+    <header
+      className="fixed z-50 left-0 p-3 backdrop-opacity-30 tablet:px-5 large-width:px-10 right-0 flex justify-between items-center"
+      style={{ backdropFilter: "blur(50px)" }}
+    >
       <Logo />
       <nav className=" hidden laptop:flex gap-x-5">
-        <NavItem link={links.home} label="Home" isActive />
+        <NavItem link={links.home} label="Home" />
+        <NavItem link={links.service} label="Services" />
         <NavItem link={links.experience} label="Experience" />
         <NavItem link={links.share} label="Share" />
         <NavItem link={links.hackaton} label="Hackaton" />
@@ -24,9 +28,16 @@ export const Navigation = () => {
             className="text-blue-dark dark:text-yellow text-3xl"
           />
         </button> */}
-        <button className="bg-yellow text-white px-5 py-2 rounded-3xl z-20 cursor-pointer">
-          Hire me
-        </button>
+        {/* Set this link to env */}
+        <a
+          href="https://drive.google.com/file/d/1Z55RqhappYSxe_NCP6pfwvTFDfROlvsP/view?usp=sharing"
+          download="ROBUSTE Manohisafidy's Resume"
+          target="_blank"
+        >
+          <button className="bg-yellow text-white px-5 py-2 rounded-3xl z-20 cursor-pointer">
+            My Resume
+          </button>
+        </a>
 
         <div className="dropdown z-10 dropdown-bottom dropdown-end laptop:hidden">
           <div tabIndex={0} role="button">
@@ -37,7 +48,8 @@ export const Navigation = () => {
             tabIndex={0}
             className="dropdown-content bg-blue-opacity shadow py-3 pr-3 mt-3 pl-10 rounded flex flex-col items-end gap-5"
           >
-            <NavItem link={links.home} label="Home" isActive />
+            <NavItem link={links.home} label="Home" />
+            <NavItem link={links.service} label="Services" />
             <NavItem link={links.experience} label="Experience" />
             <NavItem link={links.share} label="Share" />
             <NavItem link={links.hackaton} label="Hackaton" />

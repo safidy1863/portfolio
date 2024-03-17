@@ -1,7 +1,8 @@
 export const links = {
-  home: "/home",
-  experience: "/experience",
-  share: "/share",
-  hackaton: "/hackaton",
-  community: "/community",
+  home: "home",
+  service: "sevices",
+  experience: "experience",
+  share: "share",
+  hackaton: "hackaton",
+  community: "community",
 };

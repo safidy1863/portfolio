@@ -12,9 +12,9 @@ export const Skill = (props: SkillProps) => {
     <div>
       <div className="flex justify-between items-center text-blue-opacity-2 mb-2">
         <div className="flex items-center gap-x-3">
-          <Icon icon={logo} /> <span>{title}</span>
+          <Icon icon={logo} className="text-2xl"/> <span>{title}</span>
         </div>
-
+        handleSetActive
         <p>{percent}%</p>
       </div>
       <div className="relative">

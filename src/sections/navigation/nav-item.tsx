@@ -1,12 +1,28 @@
+import { Link } from "react-scroll";
+
 type NavItemProps = {
   link: string;
   label: string;
-  isActive?: boolean;
 };
 
 export const NavItem = (props: NavItemProps) => {
- 
-  const { label, isActive = false } = props;
+  const { label, link } = props;
 
-  return <button className={`${isActive ? "text-yellow" : "text-blue-dark dark:text-white"}`}>{label}</button>;
+  const handleSetActive = (active: string) => {
+    console.log(active);
+  };
+
+  return (
+    <Link
+      to={link}
+      spy={true}
+      smooth={true}
+      duration={500}
+      onSetActive={handleSetActive}
+      className="text-blue-dark dark:text-white cursor-pointer"
+      activeClass="!text-yellow"
+    >
+      {label}
+    </Link>
+  );
 };
