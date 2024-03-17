@@ -14,7 +14,6 @@ export const Skill = (props: SkillProps) => {
         <div className="flex items-center gap-x-3">
           <Icon icon={logo} className="text-2xl"/> <span>{title}</span>
         </div>
-        handleSetActive
         <p>{percent}%</p>
       </div>
       <div className="relative">
