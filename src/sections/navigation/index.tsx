@@ -8,7 +8,7 @@ export const Navigation = () => {
   const toggleTheme = () => (isLight.value = !isLight.value);
 
   return (
-    <header className="fixed z-20 left-0 p-3 backdrop-opacity-30 tablet:px-5 large-width:px-10 right-0 flex justify-between items-center">
+    <header className="fixed z-20 left-0 p-3 backdrop-opacity-30 tablet:px-5 large-width:px-10 right-0 flex justify-between items-center" style={{backdropFilter : 'blur(50px)'}}>
       <Logo />
       <nav className=" hidden laptop:flex gap-x-5">
         <NavItem link={links.home} label="Home" isActive />
