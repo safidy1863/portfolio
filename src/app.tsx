@@ -2,6 +2,7 @@ import { useSignals } from "@preact/signals-react/runtime";
 import "./main.css";
 import { Footer, Home, Navigation, Services } from "./sections";
 import { isLight } from "./signals";
+import { Experiences } from "./sections/experiences";
 
 const App = () => {
   useSignals();
@@ -18,6 +19,7 @@ const App = () => {
       </div>
       <main>
         <Services />
+        <Experiences />
       </main>
       <Footer />
     </div>
