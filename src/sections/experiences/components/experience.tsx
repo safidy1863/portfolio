@@ -1,8 +1,4 @@
-import React from 'react'
-
-type Props = {}
-
-export const Experience = (props: Props) => {
+export const Experience = () => {
   return (
     <div>Experience</div>
   )
